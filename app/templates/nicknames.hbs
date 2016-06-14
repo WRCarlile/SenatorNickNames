@@ -1,0 +1,7 @@
+<ol>
+  {{#each model as |legislator|}}
+    <li> {{legislator.first_name}}
+      {{#if legislator.nickname}}"{{legislator.nickname}}" {{/if}}
+      {{legislator.last_name}}</li>
+  {{/each}}
+</ol>
